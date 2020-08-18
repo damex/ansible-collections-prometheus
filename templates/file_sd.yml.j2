@@ -1,6 +1,7 @@
 ---
 - targets:
   - {{ inventory_hostname }}:{{ prometheus_file_sd_target_port }}
-  {% if prometheus_file_sd_labels is defined and prometheus_file_sd_labels | length %}
-  labels: "{{ prometheus_file_sd_labels }}"
-  {% endif %}
+{% if prometheus_file_sd_labels is defined and prometheus_file_sd_labels | length %}
+  labels:
+    {{ prometheus_file_sd_labels | to_nice_yaml | indent(4) }}
+{%- endif %}
