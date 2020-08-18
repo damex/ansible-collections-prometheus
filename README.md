@@ -1,6 +1,6 @@
 # ansible prometheus file sd role
 
-![linting](https://github.com/damex/ansible-role-prometheus-file-sd/workflows/linting/badge.svg)
+[![linting](https://github.com/damex/ansible-role-prometheus-file-sd/workflows/linting/badge.svg)](https://github.com/damex/ansible-role-prometheus-file-sd/actions)
 
 The prometheus file sd role is designed to be used with `Debian Buster` and `CentOS 7` distributives.
 
