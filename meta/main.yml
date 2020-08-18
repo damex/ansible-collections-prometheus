@@ -13,4 +13,7 @@ galaxy_info:
     - name: "Debian"
       versions:
         - "buster"
+    - name: "EL"
+      versions:
+        - 7
 dependencies: []

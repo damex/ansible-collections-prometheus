@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/damex/ansible-role-prometheus-file-sd.svg?branch=master)](https://travis-ci.com/damex/ansible-role-prometheus-file-sd)
 
-The prometheus file sd role is designed to be used with Debian distributive.
+The prometheus file sd role is designed to be used with `Debian Buster` and `CentOS 7` distributives.
 
 `Ansible Galaxy` users can add prometheus file sd role using the following command:
 
