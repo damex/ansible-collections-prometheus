@@ -8,3 +8,4 @@ prometheus_file_sd_target_dir: |-
 prometheus_file_sd_target_file: |-
   {{ prometheus_file_sd_target_dir }}/{{ inventory_hostname }}.yml
 prometheus_file_sd_target_port: ""
+prometheus_file_sd_labels: []
