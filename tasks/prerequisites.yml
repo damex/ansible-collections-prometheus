@@ -1,5 +1,6 @@
 ---
-- fail:
+- name: ensure variables
+  fail:
     msg:
       - "Please make sure this variables are set:"
       - "prometheus_file_sd_target_name"
