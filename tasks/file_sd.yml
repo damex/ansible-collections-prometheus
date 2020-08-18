@@ -1,6 +1,15 @@
 ---
 - name: ensure file sd directory
   file:
+    path: "{{ prometheus_file_sd_dir }}"
+    state: "directory"
+    mode: "0755"
+  loop: "{{ prometheus_file_sd_hosts }}"
+  delegate_to: "{{ item }}"
+  become: true
+
+- name: ensure file sd target directory
+  file:
     path: "{{ prometheus_file_sd_target_dir }}"
     state: "directory"
     mode: "0755"
