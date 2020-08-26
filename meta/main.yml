@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: prometheus-file-sd
+  role_name: prometheus_file_sd
   author: Roman Kuzmitskii
   description: prometheus file sd role
   license: GPLv2
