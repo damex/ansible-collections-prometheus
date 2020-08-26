@@ -1,5 +1,5 @@
 ---
-- name: ensure variables
+- name: ensure prometheus file sd variables
   fail:
     msg:
       - "Please make sure this variables are set:"
