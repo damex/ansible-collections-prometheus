@@ -1,19 +1,16 @@
 ---
 galaxy_info:
-  role_name: prometheus_file_sd
-  author: Roman Kuzmitskii
+  author: Roman Kuzmitskii <ansible@damex.org>
   description: prometheus file sd role
   license: GPLv2
-  min_ansible_version: 2.8
-  galaxy_tags:
-    - monitoring
-    - prometheus
-    - system
+  min_ansible_version: 2.14.2
+  platforms:
   platforms:
     - name: Debian
       versions:
         - buster
-    - name: EL
+        - bullseye
+    - name: Ubuntu
       versions:
-        - 7
+        - focal
 dependencies: []
