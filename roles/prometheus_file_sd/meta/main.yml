@@ -10,10 +10,10 @@ galaxy_info:
     - prometheus
     - system
   platforms:
-    - name: "Debian"
+    - name: Debian
       versions:
-        - "buster"
-    - name: "EL"
+        - buster
+    - name: EL
       versions:
         - 7
 dependencies: []
