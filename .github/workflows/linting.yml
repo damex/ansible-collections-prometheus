@@ -1,6 +1,6 @@
 ---
 name: linting
-on:  # yamllint disable-line rule:truthy
+on: # yamllint disable-line rule:truthy
   - push
   - pull_request
 
@@ -9,16 +9,15 @@ jobs:
     name: ansible-lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ansible/ansible-lint-action@master
-        with:
-          targets: ""
-          args: ""
+      - uses: actions/checkout@v3
+      - uses: ansible/ansible-lint-action@main
   yamllint:
     name: yamllint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
       - run: pip install yamllint
       - run: yamllint -s .
