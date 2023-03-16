@@ -1,0 +1,7 @@
+---
+- name: Ensure systemd service
+  ansible.builtin.include_role:
+    name: damex.systemd.systemd_service
+  vars:
+    systemd_service_name: "{{ prometheus_service_name }}"
+    systemd_service_restart_on: "{{ prometheus_configuration_state.changed }}"

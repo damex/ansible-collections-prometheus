@@ -1,0 +1,8 @@
+---
+prometheus_package_name: prometheus
+prometheus_package_version: ""
+prometheus_package_state: present
+prometheus_service_name: prometheus
+prometheus_configuration_directory: /etc/prometheus
+prometheus_configuration_file: "{{ prometheus_configuration_directory }}/prometheus.yml"
+prometheus_configuration: {}

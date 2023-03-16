@@ -1,0 +1,11 @@
+---
+- name: Ensure prometheus
+  tags:
+    - prometheus
+  block:
+    - name: Ensure prometheus package
+      ansible.builtin.import_tasks: package.yml
+    - name: Ensure prometheus configuration
+      ansible.builtin.import_tasks: configuration.yml
+    - name: Ensure prometheus systemd
+      ansible.builtin.import_tasks: systemd.yml

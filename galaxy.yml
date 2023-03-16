@@ -13,3 +13,4 @@ tags:
 repository: https://github.com/damex/ansible-collections-prometheus
 dependencies:
   damex.apt: "*"
+  damex.systemd: "*"
