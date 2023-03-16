@@ -1,0 +1,14 @@
+---
+namespace: damex
+name: prometheus
+version: 0.0.1
+readme: README.md
+authors:
+  - Roman Kuzmitskii <ansible@damex.org>
+description: prometheus collection
+license_file: LICENSE
+tags:
+  - linux
+repository: https://github.com/damex/ansible-collections-prometheus
+dependencies:
+  damex.apt: "*"
