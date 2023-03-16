@@ -4,5 +4,4 @@
     - prometheus
     - prometheus_file_sd
   block:
-    - ansible.builtin.import_tasks: prerequisites.yml
     - ansible.builtin.import_tasks: file_sd.yml

@@ -1,0 +1,10 @@
+---
+argument_specs:
+  main:
+    options:
+      prometheus_file_sd_target_name:
+        type: str
+        required: true
+      prometheus_file_sd_target_port:
+        type: int
+        required: true
