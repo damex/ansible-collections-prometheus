@@ -1,6 +1,6 @@
 ---
 - name: Ensure file sd directory
-  file:
+  ansible.builtin.file:
     path: "{{ prometheus_file_sd_directory }}"
     state: directory
     mode: "0755"
@@ -9,7 +9,7 @@
   become: true
 
 - name: Ensure file sd target directory
-  file:
+  ansible.builtin.file:
     path: "{{ prometheus_file_sd_target_directory }}"
     state: directory
     mode: "0755"
@@ -18,7 +18,7 @@
   become: true
 
 - name: Ensure file sd target configuration
-  template:
+  ansible.builtin.template:
     src: file_sd.yml.j2
     dest: "{{ prometheus_file_sd_target_file }}"
     mode: "0644"

@@ -1,6 +1,6 @@
 ---
 - name: Ensure prometheus file sd variables
-  fail:
+  ansible.builtin.fail:
     msg:
       - "Please make sure this variables are set:"
       - prometheus_file_sd_target_name
