@@ -6,6 +6,6 @@
     owner: root
     group: root
     mode: "0644"
-    validate: "/usr/bin/promtool check config %s"
+    validate: /usr/bin/promtool check config %s
   become: true
   register: prometheus_configuration_state
