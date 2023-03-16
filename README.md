@@ -1,13 +1,13 @@
-# ansible prometheus file sd role
+# ansible prometheus collection
 
-[![linting](https://github.com/damex/ansible-role-prometheus-file-sd/workflows/linting/badge.svg)](https://github.com/damex/ansible-role-prometheus-file-sd/actions)
+[![](https://github.com/damex/ansible-collections-prometheus/workflows/linting/badge.svg)](https://github.com/damex/ansible-collections-prometheus/actions)
 
-The prometheus file sd role is designed to be used with `Debian Buster` and `CentOS 7` distributives.
+The prometheus collection is designed to be used with any modern Debian Linux derivatives.
 
-`Ansible Galaxy` users can add prometheus file sd role using the following command:
+`Ansible Galaxy` users can add prometheus collection using the following command:
 
-`ansible-galaxy install damex.prometheus_file_sd`
+`ansible-galaxy collection install damex.prometheus`
 
 You can report bugs or feature requests at:
 
-* https://github.com/damex/ansible-role-prometheus-file-sd/issues
+* https://github.com/damex/ansible-collections-prometheus/issues
