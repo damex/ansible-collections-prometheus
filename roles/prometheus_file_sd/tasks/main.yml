@@ -1,5 +1,5 @@
 ---
-- name: ensure prometheus file sd
+- name: Ensure prometheus file sd
   block:
     - import_tasks: prerequisites.yml
     - import_tasks: file_sd.yml
