@@ -1,0 +1,12 @@
+---
+prometheus_exporter_name: ""
+prometheus_exporter_variable_prefix: "{{ prometheus_exporter_name | regex_replace('-', '_') }}"
+prometheus_exporter_state: "{{ lookup('vars', prometheus_exporter_variable_prefix + '_state', default='present') }}"
+prometheus_exporter_package_name: "{{ lookup('vars', prometheus_exporter_variable_prefix + '_package_name', default=prometheus_exporter_name) }}"
+prometheus_exporter_package_version: "{{ lookup('vars', prometheus_exporter_variable_prefix + '_package_version', default='') }}"
+prometheus_exporter_package_state: "{{ lookup('vars', prometheus_exporter_variable_prefix + '_package_state', default=prometheus_exporter_state) }}"
+prometheus_exporter_service_name: "{{ lookup('vars', prometheus_exporter_variable_prefix + '_service_name', default=prometheus_exporter_name) }}"
+prometheus_exporter_default_configuration_directory: "{{ lookup('vars', prometheus_exporter_variable_prefix + '_default_configuration_directory', default='/etc/default') }}"
+prometheus_exporter_default_configuration_file: "{{ lookup('vars', prometheus_exporter_variable_prefix + '_default_configuration_file', default=prometheus_exporter_name) }}"
+prometheus_exporter_environment_variables: "{{ lookup('vars', prometheus_exporter_variable_prefix + '_environment_variables', default='{}') }}"
+prometheus_exporter_configuration_arguments: "{{ lookup('vars', prometheus_exporter_variable_prefix + '_configuration_arguments', default='[]') }}"

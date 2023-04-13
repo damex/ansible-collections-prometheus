@@ -1,0 +1,21 @@
+---
+argument_specs:
+  main:
+    options:
+      prometheus_exporter_name:
+        type: str
+        required: true
+      prometheus_exporter_state:
+        type: str
+        required: false
+        default: present
+        choices:
+          - absent
+          - present
+      prometheus_exporter_environment_variables:
+        type: dict
+        required: false
+      prometheus_exporter_configuration_arguments:
+        type: list
+        required: false
+        elements: str

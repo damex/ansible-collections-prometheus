@@ -1,0 +1,9 @@
+---
+- name: Ensure prometheus exporter package
+  ansible.builtin.include_role:
+    name: damex.apt.apt_packages
+  vars:
+    apt_packages:
+      - name: "{{ prometheus_exporter_package_name }}"
+        version: "{{ prometheus_exporter_package_version }}"
+        state: "{{ prometheus_exporter_package_state }}"
