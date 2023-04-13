@@ -1,0 +1,6 @@
+{{ ansible_managed | comment }}
+
+{% for prometheus_exporter_environment_variable_key, prometheus_exporter_environment_variable_value in prometheus_exporter_environment_variables.items() %}
+{{ prometheus_exporter_environment_variable_key }}="{{ prometheus_exporter_environment_variable_value }}"
+{% endfor %}
+ARGS="{{ prometheus_exporter_configuration_arguments | join (' ') }}"

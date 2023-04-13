@@ -1,0 +1,12 @@
+---
+- name: Ensure prometheus exporter
+  tags:
+    - prometheus
+    - prometheus_exporter
+  block:
+    - name: Ensure prometheus exporter package
+      ansible.builtin.import_tasks: package.yml
+    - name: Ensure prometheus exporter configuration
+      ansible.builtin.import_tasks: configuration.yml
+    - name: Ensure prometheus exporter systemd
+      ansible.builtin.import_tasks: systemd.yml

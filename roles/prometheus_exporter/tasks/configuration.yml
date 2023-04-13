@@ -1,0 +1,10 @@
+---
+- name: Ensure prometheus exporter default configuration file
+  ansible.builtin.template:
+    src: prometheus-exporter.default.j2
+    dest: "{{ prometheus_exporter_default_configuration_directory }}/{{ prometheus_exporter_default_configuration_file }}"
+    owner: root
+    group: root
+    mode: "0644"
+  become: true
+  register: prometheus_exporter_default_configuration_file_state
