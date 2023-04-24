@@ -1,0 +1,11 @@
+---
+- name: Ensure alertmanager.yml
+  ansible.builtin.template:
+    src: alertmanager.yml.j2
+    dest: "{{ alertmanager_configuration_file }}"
+    owner: root
+    group: root
+    mode: "0644"
+    validate: /usr/bin/amtool check-config %s
+  become: true
+  register: alertmanager_configuration_state

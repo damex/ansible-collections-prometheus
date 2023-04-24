@@ -1,0 +1,8 @@
+---
+alertmanager_package_name: prometheus-alertmanager
+alertmanager_package_version: ""
+alertmanager_package_state: present
+alertmanager_service_name: prometheus-alertmanager
+alertmanager_configuration_directory: /etc/prometheus
+alertmanager_configuration_file: "{{ alertmanager_configuration_directory }}/alertmanager.yml"
+alertmanager_configuration: {}
