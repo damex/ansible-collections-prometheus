@@ -1,0 +1,9 @@
+---
+- name: Ensure alertmanager package
+  ansible.builtin.include_role:
+    name: damex.apt.apt_packages
+  vars:
+    apt_packages:
+      - name: "{{ alertmanager_package_name }}"
+        version: "{{ alertmanager_package_version }}"
+        state: "{{ alertmanager_package_state }}"

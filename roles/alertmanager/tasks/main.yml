@@ -1,0 +1,11 @@
+---
+- name: Ensure alertmanager
+  tags:
+    - alertmanager
+  block:
+    - name: Ensure alertmanager package
+      ansible.builtin.import_tasks: package.yml
+    - name: Ensure alertmanager configuration
+      ansible.builtin.import_tasks: configuration.yml
+    - name: Ensure alertmanager systemd
+      ansible.builtin.import_tasks: systemd.yml
